@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Talleres Municipales</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Talleres</a></li>
+                        <li><a href="">Contacto</a></li>
+                        <li><a href="">Ingresar</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <div class="text-box">
+                <h1>Talleres Municipales</h1>
+                <p>Talleres municipales pensados especialmente para adultos mayores</p>
+                <a href="" class="boton">Inscribete ya!</a>
+            </div>
+        </section>
+        <section class="course">
+            <h1>Nuestro objetivo</h1>
+            <p>Los talleres de nuestra municipalidad constituyen una propuesta a la comunidad, a través de los cuales el municipio ofrece un lugar de encuentro para compartir, aprender y desarrollar una actividad de esparcimiento cerca de su hogar.
+            <br>Nuestro proyecto abarca una gran cantidad de talleres, con muchas alternativas para todos los adultos mayores interesados.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Talleres</h3>
+                <p>Todo sobre los talleres</p>
+            </div>
+            <div class="course-col">
+                <h3>Postulaciones</h3>
+                <p>Todo sobre las postulaciones</p>
+            </div>
+            <div class="course-col">
+                <h3>Evaluaciones</h3>
+                <p>Todo sobre las evaluaciones</p>
+            </div>
+        </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <section class="footer">
+            <h4> Contactanos </h4>
+            <p> Hola </p>
+        </section>
+    </body>
+</html>
