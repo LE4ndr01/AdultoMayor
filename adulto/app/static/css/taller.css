@@ -3,14 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.header{
-    min-height: 100vh;
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/portada.webp);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
+
 nav{
     display: flex;
     padding: 2% 6%;
@@ -66,7 +59,7 @@ nav img{
 .boton{
     display: inline-block;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
     font-size: 20px;
@@ -75,7 +68,7 @@ nav img{
     cursor: pointer;
 }
 .boton:hover{
-    border: 1px solid #ffffff;
+    border: 1px solid #000000;
     background: #000000;
     transition: 1s;
 }
@@ -89,9 +82,10 @@ nav .fa{
         display: block;}
     .nav-links{
         position: absolute;
-        background: #2193b0;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #28abcc, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #28abcc, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #CAC531;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #e1e78d, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #e1e78d, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         height: 100vh;
         width: 200px;
         top: 0;
@@ -119,12 +113,12 @@ nav .fa{
     padding-top: 100px;
 }
 h1{
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 600;
 }
 p{
     color: rgb(0, 0, 0);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
@@ -136,9 +130,7 @@ p{
 }
 .course-col{
     flex-basis: 31%;
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #55cbe6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #55cbe6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
     padding: 20px 12px;
@@ -149,10 +141,9 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-    font-size: 25px;
 }
 .course-col:hover{
-    box-shadow: 0 0 10px 0px rgb(0, 0, 0);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.2);
 }
 @media(max-width: 700px){
     .row{
@@ -160,9 +151,105 @@ h3{
     }
 }
 .footer{
-    background: #2193b0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #000000;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container{
+    margin-top: 40px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.banner-icons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+
+}
+.carousel-indicators li{
+    height: 0.8rem;
+    width: .8rem;
+    border-radius: 50%;
+    background-color: white;
+}
+ul {
+    list-style-type: none;
+    margin-left:37%;
+  padding:0;
+  }
+  
+  .rating{
+    margin-left:37%;
+  }
+  
+  .page{
+    background-color:#dfe6e0;
+  padding:2%;
+  margin: auto;
+  }
+  
+  .fa{
+    color:#f2dd1d;
+  }
+  
+  .card-img-top{
+  width:90%;
+  height:225px;
+  }
+  
+  .view{
+    background-color:#dfe6e0;
+    padding:10px;
+    margin:20px;
+  }
+  
+  .card{
+    width:95%;
+    padding:0px;
+    margin-left: 2%;
+  }
+  
+  .card-footer{
+    background-color: #ff772e;
+    font-weight: 700;
+  }
+  
+  .price{
+  color:#ff4517;
+    font-weight: 600;
+  
+  }
+
+  .footer{
+    background: #f46b45;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     text-align: center;
     padding: 15px 0;
 }
@@ -182,9 +269,3 @@ h3{
     font-weight: 600;
     font-size: 18px;
 }
-a:link, a:visited, a:active {
-    text-decoration:none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-}
-

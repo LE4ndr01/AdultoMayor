@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/e5df6334c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="cl">
+    <nav>
+        <a href="home.html"><img src="img/logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="talleres.html">Talleres</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
+    </nav>
+    </section>
+    <div class="container-form">
+        <div class="info-form">
+            <h2>Contáctanos</h2>
+            <p>Para hacer uso del formulario de contacto, agradecemos a usted que:
+                <br>* Ingrese sólo una consulta por formulario.
+                <br>* Complete los datos requeridos en los campos determinados.
+                <br>Las solicitudes que no cumplan con lo estipulado anteriormente NO SERÁN DERIVADOS.</p>
+            <a href="#"><i class="fa fa-phone"></i> +569 1234 5678</a>
+            <a href="#"><i class="fa fa-envelope"></i> email@ptealto.cl </a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i>  Dirección: Av. concha y Toro 1820, Puente Alto, Santiago</a>
+        </div>
+        <form action="#" autocomplete="off">
+            <input type="text" name="nombre" placeholder="Nombre completo" class="campo">
+            <input type="text" name="run" placeholder="Rut (punto y guión)" class="campo">
+            <input type="emal" name="email" placeholder="Correo" class="campo">
+            <input type="text" name="telefono" placeholder="Telefono" class="campo">
+            <textarea name="mensaje" placeholder="Tu Mensaje..."></textarea>
+            <input type="submit" name="enviar" value="Enviar Mensaje" class="btn-enviar">
+        </form>
+    </div>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

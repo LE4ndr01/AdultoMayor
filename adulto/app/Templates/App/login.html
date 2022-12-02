@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Ingreso</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e5df6334c2.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <section class="cl">
+        <nav>
+            <a href="home.html"><img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="talleres.html">Talleres</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
+        </nav></section>
+  <section class="form-register">
+<div class="container">
+    <div class="form-box">
+        <h1 id="title">Ingresar</h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Nombre">
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Correo">
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Clave">
+            </div>  
+                  <p>Si olvidaste tu clave <a href=""> ingresa aqu&iacute;</a></p>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Inscribete</button>
+                <button type="button" class="disable" id="signinBtn">Ingresar</button>
+            </div>
+            <div class="input-group">
+                <h4>También puedes ingresar con tu clave&Uacute;nica</h4>
+                <a class="cu" href="#" title="Iniciar sesión de ClaveÚnica" id="myHref" onclick="callOne();">
+                    <span class="cl-claveunica"></span><i class="fa-brands fa-keycdn"></i>
+                    <span class="texto">Iniciar sesión</span>
+                </a>
+               </div>
+        </div>
+            </div>
+            </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let signupBtn = document.getElementById("signupBtn");
+    let signinBtn = document.getElementById("signinBtn");
+    let nameField = document.getElementById("nameField");
+    let title = document.getElementById("title");
+
+    signinBtn.onclick = function(){
+        nameField.style.maxHeight = "0";
+        title.innerHTML = "Ingresar";
+        signupBtn.classList.add("disable");
+        signinBtn.classList.remove("disable");
+    }
+
+    signupBtn.onclick = function(){
+        nameField.style.maxHeight = "60px";
+        title.innerHTML = "Inscribete";
+        signupBtn.classList.remove("disable");
+        signinBtn.classList.add("disable");
+    }
+
+
+</script>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+<section class="footer">
+    <h4>¿En qué consiste el programa?</h4>
+    <p> El Programa busca contribuir al envejecimiento activo de personas mayores en situación de vulnerabilidad social, proporcionando conocimientos y oportunidades para el desarrollo personal, cognitivo, biológico, físico y de participación social.
+        <br> Contactanos <br><i class="fa-solid fa-phone"></i> +569 1234 5678 <br>
+        <i class="fa-solid fa-location-dot"></i></i> Dirección: Av. concha y Toro 1820, Puente Alto, Santiago
+        <br>
+        <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i>
+    </p>
+</section>
+</html>

@@ -1,67 +1,55 @@
 <!DOCTYPE html>
-<html lang="es">
-<<<<<<< HEAD
-     {% load static %}
-    <head >
-       
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
-        <title>Talleres Municipales</title>
-        <link rel="stylesheet" href="{% static 'css/style.css'%}">
-=======
-    {% load static %}
+<html>
     <head>
-       {% load static %}
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Talleres Municipales</title>
-<<<<<<< HEAD
-        <link rel="stylesheet" href="{% static 'css/style.css'%}">
-=======
-        <link rel="stylesheet" href={% static 'css/style.css'%}>
->>>>>>> 1d17bc59c387fe89890715fa20f79cfee5d88922
->>>>>>> 7f1085583f84fa83075b8480c1b2ba5ab6c474b6
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/e5df6334c2.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
     <body>
         <section class="header">
             <nav>
-                <a href="index.html"><img src=""></a>
+                <a href="home.html"><img src="img/logo.png"></a>
                 <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
                     <ul>
-                        <li><a href="">Inicio</a></li>
-                        <li><a href="">Talleres</a></li>
-                        <li><a href="">Contacto</a></li>
-                        <li><a href="">Ingresar</a></li>
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="talleres.html">Talleres</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="login.html">Ingresar</a></li>
                     </ul>
                 </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
             </nav>
             <div class="text-box">
                 <h1>Talleres Municipales</h1>
-                <p>Talleres municipales pensados especialmente para adultos mayores</p>
-                <a href="" class="boton">Inscribete ya!</a>
+                <p>Nuestra misión es fomentar la participación e integración de los adultos mayores, promoviendo su autocuidado, autoestima y autogestión, como así mismo, rescatar los roles culturales y grupos de autogestión solidarios.</p>
+                <a href="login.html" class="boton">Inscribete ya!</a>
             </div>
         </section>
         <section class="course">
             <h1>Nuestro objetivo</h1>
-            <p>Los talleres de nuestra municipalidad constituyen una propuesta a la comunidad, a través de los cuales el municipio ofrece un lugar de encuentro para compartir, aprender y desarrollar una actividad de esparcimiento cerca de su hogar.
+            <p>Nuestro obejtivo está orientado a promover instancias de participación y capacitación en los procesos de envejecimiento activo y asociatividad entre los adultos mayores, para lograr una mejor calidad de vida
             <br>Nuestro proyecto abarca una gran cantidad de talleres, con muchas alternativas para todos los adultos mayores interesados.</p>
         <div class="row">
             <div class="course-col">
                 <h3>Talleres</h3>
-                <p>Todo sobre los talleres</p>
+                <a style="color:#000000;" href="talleres.html">Pincha aquí</a> <p>para inscribirte en uno de nuestros talleres</p>
             </div>
             <div class="course-col">
                 <h3>Postulaciones</h3>
-                <p>Todo sobre las postulaciones</p>
+                <a style="color:#000000;" href="postulaciones.html">Pincha aquí</a> <p>para poder postularte como uno de nuestros instructores</p>
             </div>
             <div class="course-col">
                 <h3>Evaluaciones</h3>
-                <p>Todo sobre las evaluaciones</p>
+                <a style="color:#000000;" href="">Pincha aquí</a>
+                <p>para evaluarnos y a nuestros servicios</p>
             </div>
         </div>
         </section>
@@ -75,9 +63,112 @@
                 navLinks.style.right = "-200px";
             }
         </script>
-        <section class="footer">
-            <h4> Contactanos </h4>
-            <p> Hola </p>
-        </section>
+         <main class="vh-100 bg-light d-flex align-items-center">
+                
+            <!-- El contenedor de la categorias -->
+<section id="principal" class="h-75 container-sm mx-auto bg-light" style ="max-width: 800px;">
+
+<h1>¿En qué le podemos ayudar?</h1>
+
+
+<!-- La primera categoria -->
+<div class="accordion" id="accordionExample">
+
+
+<div class="accordion-item my-4">
+<h2 class="accordion-header" id="headingOne">
+<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <i class="fa-solid fa-list"></i>
+ <span class="px-3 text-info">Requisitos para participar</span>
+</button>
+</h2>
+<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+    <div class="my-2">•60 años o más</div>
+    <div class="my-2">•Residir en la comuna</div>
+    <div class="my-2">•Acreditar salud compatible para talleres de actividad física.</div>
+</div>
+</div>
+</div>
+
+<!-- La segunda Categoria  -->
+
+<div class="accordion-item my-4">
+<h2 class="accordion-header" id="headingTwo">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    <i class="fa-solid fa-question"></i>
+<span class="px-3 text-info" >¿Cómo pueden participar?</span>  
+</button>
+</h2>
+<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<div class="my-2">•Las personas interesadas en conocer la programación y  actividades deben acercarse a la oficina regional del Servicio, y contactar al Encargado/a del Programa Envejecimiento Activo.</div>
+<div class="my-2">•También pueden inscribirse desde este <a href="login.html">link</a></div>
+</div>
+</div>
+</div>
+
+<!-- La tercera categoria  -->
+
+<div class="accordion-item my-4">
+<h2 class="accordion-header" id="headingThree">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+<i class="fa-regular fa-id-card"></i>
+<span class="px-3 text-info">¿Qué necesita presentar?</span>
+</button>
+</h2>
+<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<div class="my-2">•Fotocopia cédula de identidad</div>
+<div class="my-2">•Tarjeta Vecino vigente o certificado de residencia</div>
+<div class="my-2">•Certificado médico (talleres de actividad física)</div>
+</div>
+</div>
+</div>
+
+<!-- La cuarta categoria  -->
+
+<div class="accordion-item">
+<h2 class="accordion-header" id="heading4">
+<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+    <i class="fa-regular fa-clock"></i>
+<span class="px-3 text-info">Horarios</span>
+</button>
+</h2>
+<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+<div class="accordion-body">
+<div class="my-2">•De lunes a viernes de 10:00 a 17:00 hrs.(horario exacto depende del taller)</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+</section>
+
+</main>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
     </body>
+    
+    
+    <section class="footer">
+        <h4>¿En qué consiste el programa?</h4>
+        <p> El Programa busca contribuir al envejecimiento activo de personas mayores en situación de vulnerabilidad social, proporcionando conocimientos y oportunidades para el desarrollo personal, cognitivo, biológico, físico y de participación social.
+            <br> Contactanos <br><i class="fa-solid fa-phone"></i> +569 1234 5678 <br>
+            <i class="fa-solid fa-location-dot"></i></i> Dirección: Av. concha y Toro 1820, Puente Alto, Santiago
+            <br>
+            <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i>
+        </p>
+    </section>
 </html>

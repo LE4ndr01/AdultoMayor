@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Talleres Municipales</title>
+        <link rel="stylesheet" href="taller.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&amp;family=Poppins&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e5df6334c2.js" crossorigin="anonymous"></script>
+<style>
+.card-footer{
+  background-color: #ff772e;
+  font-weight: 700;
+}
+</style>
+</head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="home.html"><img src="img/logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="talleres.html">Talleres</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="login.html">Ingresar</a></li>
+                    </ul>
+                </div>
+                
+            
+        </div>
+        </section>
+        
+
+<!--For Page-->
+<div class="page">
+
+	<!--For Row containing all card-->
+	<div class="row">
+
+
+
+		<!--Card 1-->
+		<div class="col-sm">
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 " style="background-color: #006FB3;">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="img/taller1.jpg"
+      alt="" >
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					
+
+					<!-- Card Description-->
+					<p class="card-text" >
+                        <h4>Taller de Higiene y Seguridad</h4>
+					</p>
+
+
+
+
+					<!-- Card Rating-->
+
+
+
+					<!--Card footer-->
+					<button class="btn btn-primary" style="background-color: rgb(255, 123, 0);">
+                        Inscribirse
+                    </button>
+
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<!--Card 2-->
+		<div class="col-sm">
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 " style="background-color: #006FB3">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="img/taller2.jpg"
+      alt="">
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					
+
+					<!--Card Description-->
+					<p class="card-text">
+                        <h4>Taller de memoria para adultos mayores</h4>
+					</p>
+
+
+
+					<!-- Card Rating-->
+
+
+					<!--Card footer-->
+					<button class="btn btn-success" style="background-color: rgb(255, 123, 0);">
+                        Inscribirse
+                    </button>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--Card 2-->
+		<div class="col-sm" >
+			<div class="card card-cascade card-ecommerce wider shadow mb-5 " style="background-color: #006FB3;">
+
+				<!--Card image-->
+				<div class="view view-cascade overlay text-center">
+					<img class="card-img-top" src="img/taller3.jpg"
+      alt="">
+					<a>
+						<div class="mask rgba-white-slight"></div>
+					</a>
+				</div>
+
+				<!--Card Body-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Card Title-->
+					
+
+					<!--Description-->
+					<p class="card-text">
+                        <h4>Taller de Salud Mental</h4>
+					</p>
+
+
+
+					<!-- Card Rating-->
+
+
+
+					<!--Card footer-->
+					<button class="btn btn-primary" style="background-color: rgb(255, 123, 0);">
+                        Inscribirse
+                    </button>
+
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+        <section class="footer">
+			<h4>¿En qué consiste el programa?</h4>
+			<p> El Programa busca contribuir al envejecimiento activo de personas mayores en situación de vulnerabilidad social, proporcionando conocimientos y oportunidades para el desarrollo personal, cognitivo, biológico, físico y de participación social.
+				<br> Contactanos <br><i class="fa-solid fa-phone"></i> +569 1234 5678 <br>
+				<i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-whatsapp"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-twitter"></i>
+			</p>
+		</section>
+    </body>
+</html>
