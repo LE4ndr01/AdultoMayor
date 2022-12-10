@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>Formulario de Contacto</title>
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="{% static 'css/contacto.css'%}">
     <!--Icon-Font-->
     <script src="https://kit.fontawesome.com/e5df6334c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="cl">
     <nav>
-        <a href="home.html"><img src="img/logo.png"></a>
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo.png'%}"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
             <ul>
-                <li><a href="home.html">Inicio</a></li>
-                <li><a href="talleres.html">Talleres</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="{% url 'home' %}">Inicio</a></li>
+                <li><a href="{% url 'talleres' %}">Talleres</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                <li><a href="{% url 'login' %}">Ingresar</a></li>
             </ul>
         </div>
         <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
