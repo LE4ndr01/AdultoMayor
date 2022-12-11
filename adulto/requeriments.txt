@@ -1,0 +1,9 @@
+django
+pillow
+django-admin-interface
+django-crispy-forms
+django-rest-framework
+social-auth-app-django
+django-otp
+qrcode
+django-two-factor-auth
