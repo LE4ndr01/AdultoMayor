@@ -16,14 +16,14 @@
     <body>
         <section class="header">
             <nav>
-                <a href="home.html"><img src="{% static 'img/logo.png'%}"></a>
+                <a href="{% url 'home' %}"><img src="{% static 'img/logo.png'%}"></a>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="{% url 'home' %}">Inicio</a></li>
-                        <li><a href="talleres.html">Talleres</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="login.html">Ingresar</a></li>
+                        <li><a href="{% url 'talleres' %}">Talleres</a></li>
+                        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                        <li><a href="{% url 'login' %}">Ingresar</a></li>
                     </ul>
                 </div>
                 <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
@@ -31,7 +31,7 @@
             <div class="text-box">
                 <h1>Talleres Municipales</h1>
                 <p>Nuestra misión es fomentar la participación e integración de los adultos mayores, promoviendo su autocuidado, autoestima y autogestión, como así mismo, rescatar los roles culturales y grupos de autogestión solidarios.</p>
-                <a href="login.html" class="boton">Inscribete ya!</a>
+                <a href="{% url 'login' %}" class="boton">Inscribete ya!</a>
             </div>
         </section>
         <section class="course">
@@ -41,15 +41,15 @@
         <div class="row">
             <div class="course-col">
                 <h3>Talleres</h3>
-                <a style="color:#000000;" href="talleres.html">Pincha aquí</a> <p>para inscribirte en uno de nuestros talleres</p>
+                <a style="color:#000000;" href="{% url 'talleres' %}">Pincha aquí</a> <p>para inscribirte en uno de nuestros talleres</p>
             </div>
             <div class="course-col">
                 <h3>Postulaciones</h3>
-                <a style="color:#000000;" href="postulaciones.html">Pincha aquí</a> <p>para poder postularte como uno de nuestros instructores</p>
+                <a style="color:#000000;" href="{% url 'postulaciones' %}">Pincha aquí</a> <p>para poder postularte como uno de nuestros instructores</p>
             </div>
             <div class="course-col">
                 <h3>Evaluaciones</h3>
-                <a style="color:#000000;" href="">Pincha aquí</a>
+                <a style="color:#000000;" href="{% url 'evaluacion' %}">Pincha aquí</a>
                 <p>para evaluarnos y a nuestros servicios</p>
             </div>
         </div>
@@ -104,7 +104,7 @@
 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 <div class="accordion-body">
 <div class="my-2">•Las personas interesadas en conocer la programación y  actividades deben acercarse a la oficina regional del Servicio, y contactar al Encargado/a del Programa Envejecimiento Activo.</div>
-<div class="my-2">•También pueden inscribirse desde este <a href="login.html">link</a></div>
+<div class="my-2">•También pueden inscribirse desde este <a href="{% url 'login' %}">link</a></div>
 </div>
 </div>
 </div>

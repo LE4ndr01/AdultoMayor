@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {% load static %}
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
         <title>Ingreso</title>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="{% static 'css/login.css'%}">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poppins&display=swap" rel="stylesheet">
@@ -12,14 +13,14 @@
 <body>
     <section class="cl">
         <nav>
-            <a href="home.html"><img src="img/logo.png"></a>
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png'%}"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" style="color: #fff;" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="home.html">Inicio</a></li>
-                    <li><a href="talleres.html">Talleres</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="login.html">Ingresar</a></li>
+                    <li><a href="{% url 'home' %}">Inicio</a></li>
+                    <li><a href="{% url 'talleres' %}">Talleres</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                    <li><a href="{% url 'login' %}">Ingresar</a></li>
                 </ul>
             </div>
             <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
