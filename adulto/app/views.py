@@ -1,4 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Taller,Instructor,postulaciones
+from .forms import CustomUserCreationForm
+from django.contrib.auth import login, authenticate
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -9,12 +14,43 @@ def contacto(request):
 def evaluacion(request):
     return render(request, 'app/evaluacion.html')
 def postulaciones(request):
+    
+ 
+    
     return render(request, 'app/postulaciones.html')
+    
 def talleres(request):
-    return render(request, 'app/talleres.html')
+    
+    talleres = Taller.objects.all()
+    data = {
+        'talleres':talleres
+    }    
+    
+    return render(request, 'app/talleres.html',data)
 def login(request):
     return render(request, 'app/login.html')
 def evaluacion(request):
     return render(request, 'app/evaluacion.html')
 def postulaciones(request):
-    return render(request, 'app/postulaciones.html')    
+    
+    postulaciones = postulaciones.objects.all()
+    data = {
+        'postulaciones':postulaciones
+    }
+    
+    return render(request, 'app/postulaciones.html',data)    
+def registro(request):
+    data = {
+        'form':CustomUserCreationForm()
+    } 
+    if request.method == 'POST':
+        formulario = CustomUserCreationForm(data=request.POST)
+        if formulario.is_valid():
+            formulario.save()
+            user = authenticate(username=formulario.cleaned_data["username"], password=formulario.cleaned_data["password1"])
+            
+            messages.success(request, "Te has registrado correctamente")
+            return redirect(to="home")
+        data["form"] = formulario   
+    
+    return render(request, 'registration/registro.html',data)

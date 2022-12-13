@@ -14,6 +14,7 @@
 
 </head>
     <body>
+        
         <section class="header">
             <nav>
                 <a href="{% url 'home' %}"><img src="{% static 'img/logo.png'%}"></a>
@@ -23,7 +24,11 @@
                         <li><a href="{% url 'home' %}">Inicio</a></li>
                         <li><a href="{% url 'talleres' %}">Talleres</a></li>
                         <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                        {% if user.is_authenticated %}
+                        @{{user.username}}
+                        {% else %}
                         <li><a href="{% url 'login' %}">Ingresar</a></li>
+                        {% endif %}
                     </ul>
                 </div>
                 <i class="fa-solid fa-bars" style="color: #fff;" onclick="showMenu()"></i>
