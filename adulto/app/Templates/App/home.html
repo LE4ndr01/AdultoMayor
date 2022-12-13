@@ -25,7 +25,8 @@
                         <li><a href="{% url 'talleres' %}">Talleres</a></li>
                         <li><a href="{% url 'contacto' %}">Contacto</a></li>
                         {% if user.is_authenticated %}
-                        @{{user.username}}
+                        <li><h4 style="color: aqua;">@{{user.username}}</h4></li>
+                        
                         {% else %}
                         <li><a href="{% url 'login' %}">Ingresar</a></li>
                         {% endif %}
