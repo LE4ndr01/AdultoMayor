@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Taller,Instructor,postulaciones
+from .models import Taller,Instructor
 from .forms import CustomUserCreationForm
 from django.contrib.auth import login, authenticate
 from django.contrib import messages
@@ -32,13 +32,7 @@ def login(request):
 def evaluacion(request):
     return render(request, 'app/evaluacion.html')
 def postulaciones(request):
-    
-    postulaciones = postulaciones.objects.all()
-    data = {
-        'postulaciones':postulaciones
-    }
-    
-    return render(request, 'app/postulaciones.html',data)    
+    return render(request, 'app/postulaciones.html')    
 def registro(request):
     data = {
         'form':CustomUserCreationForm()
