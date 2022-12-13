@@ -15,3 +15,11 @@ class CustomUserCreationForm(UserCreationForm):
    class Meta:
       model = User
       fields =['username', "password1","password2"]
+
+class FormTaller (forms.ModelForm):
+
+   class Meta:
+          model = Taller
+          fields = '__all__'
+          
+
