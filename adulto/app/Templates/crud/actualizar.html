@@ -1,0 +1,24 @@
+<!-- Formulario -->
+<form action="" class="formulario_contacto" method="post" >
+         
+    <h2 ><p id="contacto"> Editar Productos </p></h2>
+    
+   
+        {% csrf_token %}
+        {{form  | crispy}}
+    <br>
+    <br>
+   
+    <div class="d-flex justify-content-center">
+        <input type="reset" value="Cancelar" class="btn btn-secondary">
+        <input type="submit" value="Guardar" class="btn btn-primary">  
+    </div>
+   &nbsp;&nbsp;{{mensaje|title}}
+  </form>
+     
+          
+             
+       
+  
+                            
+  <!-- Formulario -->
