@@ -58,15 +58,12 @@ def agregar_taller(request):
     if request.method == 'POST':
         formulario = FormTaller(data=request.POST, files=request.FILES)
         if formulario.is_valid():
-            formulario.save();
+            
             data["mensaje"] = "Guardado Correctamente"
         else:
             data["form"] = formulario
     return render(request, 'crud/agregar.html',data)
 
 def listar_taller(request):
-    talleres = Taller.objects.all()
-    data = {
-        'talleres':talleres
-    }
+
     return render(request, 'crud/listar.html',data)
